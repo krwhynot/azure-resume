@@ -1,5 +1,5 @@
 name: deploy-frontend
-# Deploys when push is made from frontend folder--- 2nd attempt
+# Deploys when push is made from frontend folder
 
 on:
     push:
