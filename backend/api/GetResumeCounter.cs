@@ -32,6 +32,7 @@ namespace VisitorCounter.Function
                 PartitionKey ="11")] out Counter updatedCounter,
             ILogger log)
         {
+            // Here is where the counter is updated.
             log.LogInformation("C# HTTP trigger function processed a request.");
 
             updatedCounter = counter;
