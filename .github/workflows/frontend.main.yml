@@ -12,6 +12,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
+
+    # Set up Node.js version 20.11.0
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20.11.0'
+        cache: 'npm'
+
     - uses: azure/login@v1
       with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
@@ -27,7 +35,7 @@ jobs:
         inlineScript: |
            az cdn endpoint purge --content-paths  "/*" --profile-name "krresumecdn" --name "krresumecdn" --resource-group "resume-rg"
 
-  # Azure logout
+    # Azure logout
     - name: logout
       run: |
             az logout
