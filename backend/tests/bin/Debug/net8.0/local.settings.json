@@ -1,0 +1,12 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "CosmosDBConnectionString": "AccountEndpoint=https://resumesite.documents.azure.com:443/;AccountKey=BISqktKMTN6yTK3ffH1tpseFykWcb6MeXvox9v6vASsspfetkxD5Gxw94xIyO5aw3HANhidGX4XlACDbKGT0ew==;"
+  },
+  "Host":
+  {
+    "CORS": "*"
+  }
+}
