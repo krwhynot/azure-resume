@@ -1,5 +1,5 @@
 name: deploy-frontend
-# Deploys when push is made from frontend folder
+# Deploys when push is made from frontend folder add overwrite
 
 on:
     push:
